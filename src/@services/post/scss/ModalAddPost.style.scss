@@ -1,0 +1,10 @@
+.customPost {
+  .dropdown-toggle {
+    padding: 0 !important;
+  }
+  .dropdown-toggle.btn.btn-flat-secondary {
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}

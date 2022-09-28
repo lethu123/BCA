@@ -1,0 +1,156 @@
+.modalValue {
+  .modalHeaderValue {
+    h5 {
+      color: #6EB144;
+      font-size: 20px;
+      font-weight: bold;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .modal-content {
+    min-width: 75% !important;
+    width: 75% !important;
+    margin: 0px auto !important;
+  }
+
+  .nav-toolbar {
+    width: 100%;
+
+  }
+
+}
+
+.customer {
+  .gridIdeation {
+    display: grid;
+    grid-template-columns: repeat(2, 320px);
+    grid-template-rows: repeat(2, 220px);
+
+    .gridOne {
+      grid-column: 1/span 1;
+      grid-row: 1/span 1;
+    }
+
+    .gridTwo {
+      grid-column: 1/span 1;
+      grid-row: 2/span 1;
+    }
+
+    .gridAbsolute {
+      grid-column: 2/span 1;
+      grid-row: 1/span 2;
+    }
+  }
+
+  .gridValue {
+    display: grid;
+    grid-template-columns: repeat(1, 360px);
+    grid-template-rows: repeat(2, 220px);
+
+    .valueOne {
+      grid-column: 1/span 2;
+      grid-row: 1/span 1;
+    }
+
+    .valueTwo {
+      grid-column: 1/span 2;
+      grid-row: 2/span 1;
+    }
+
+    .valueAbsolute {
+      grid-column: 1/span 1;
+      grid-row: 1/span 2;
+    }
+  }
+
+
+
+  @media screen and (min-width:1900px) {
+    .gridAbsolute {
+      .imgAbsolute {
+        top: 8% !important;
+        right: 25% !important;
+      }
+
+      .nameAbsolute {
+        top: 53% !important;
+        right: 28% !important;
+      }
+
+      .numberAbsolute {
+        top: 48% !important;
+        right: 54% !important;
+      }
+    }
+  }
+
+  @media screen and (min-width:768px) and (max-width:960px) {
+    .gridAbsolute {
+      .imgAbsolute {
+        top: 8% !important;
+        right: 26% !important;
+      }
+
+      .nameAbsolute {
+        top: 53% !important;
+        right: 32% !important;
+      }
+
+      .numberAbsolute {
+        top: 48% !important;
+        right: 55% !important;
+      }
+    }
+  }
+
+  @media screen and (min-width:960px) and (max-width:1199px) {
+    .gridAbsolute {
+      .imgAbsolute {
+        top: 8% !important;
+        right: 31% !important;
+      }
+
+      .nameAbsolute {
+        top: 53% !important;
+        right: 40% !important;
+      }
+
+      .numberAbsolute {
+        top: 48% !important;
+        right: 60% !important;
+      }
+    }
+  }
+
+  @media screen and (min-width:1900px) {
+    .valueOne {
+      p {
+        right: 48% !important
+      }
+
+      p:last-child {
+        right: 57% !important
+      }
+    }
+
+    .valueTwo {
+      p {
+        right: 48% !important
+      }
+
+      p:last-child {
+        right: 57% !important
+      }
+    }
+  }
+
+
+}
+
+
+
+::-webkit-scrollbar {
+  width: 0px !important;
+}

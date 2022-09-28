@@ -1,0 +1,15 @@
+.breadcrumb {
+  background-color: transparent;
+  margin: 0;
+}
+.breadcrumb-item {
+  &::after {
+    display: none;
+  }
+}
+
+#warehouse-model {
+  position: relative;
+  // height: calc(100vh - 260px);
+  
+}

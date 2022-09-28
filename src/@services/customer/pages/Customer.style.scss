@@ -1,0 +1,12 @@
+.breadcrumbs-product {
+  background-color: transparent !important;
+  width: 100% !important;
+}
+.breadcrumb {
+  background-color: transparent;
+}
+.breadcrumb-item {
+  &::after {
+    display: none;
+  }
+}

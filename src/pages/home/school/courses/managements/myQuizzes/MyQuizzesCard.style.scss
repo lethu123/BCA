@@ -1,0 +1,7 @@
+.myQuizzesCard{
+    .btn-flat-primary.dropdown-toggle{
+        &::after{
+            display: none;
+        }
+    }
+}

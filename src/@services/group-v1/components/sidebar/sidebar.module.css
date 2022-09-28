@@ -1,0 +1,69 @@
+.sidebar_title {
+    font-size: 1.6rem;
+    padding: 8px;
+    font-size: 1.6rem;
+    line-height: 24px;
+    color: #CCCCCC;
+}
+
+.sidebar_list {
+    display: flex;
+    padding: 24px;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.sidebar_text {
+    margin: 0 0;
+    margin-left: 8px;
+    color: #666666;
+}
+
+.sidebar_number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 8px;
+    line-height: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FCFCFC;
+    background-color: #8BCD41;
+    border-radius: 4px;
+}
+
+.custom_cardBody {
+    padding: 0 0;
+}
+
+.sidebarHorizontal_list {
+    margin: 0 0;
+    display: flex;
+    margin-right: 8px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 153px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.sidebarHorizontal_list:hover {
+    background-color: #F4F5F4;
+}
+
+.sidebarHorizontal_text {
+    transition: all .5s;
+    color: #1C3218;
+}
+
+.sidebarHorizontal_list:hover .sidebarHorizontal_text {
+    color: #467C3B;
+}
+
+.sidebarHorizontal_list:last-child {
+    margin-right: 0;
+}

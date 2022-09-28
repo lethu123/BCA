@@ -1,0 +1,18 @@
+.input,
+.inputSearch {
+    background-color: #f4f5f4 !important;
+    border: none !important;
+}
+
+.input:focus,
+.inputSearch:focus {
+    border: none;
+}
+
+.custom_badge_top {
+    background-color: #F3FAEC !important;
+}
+
+.info {
+    margin-top: 10px;
+}

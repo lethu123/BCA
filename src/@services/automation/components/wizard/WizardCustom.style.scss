@@ -1,0 +1,14 @@
+.customWizard {
+  .step-trigger {
+    padding: 0 5px !important;
+  }
+  .bs-stepper-header {
+    justify-content: center;
+  }
+  .btn-prev,
+  .btn-next {
+    svg {
+      margin: 0 5px !important;
+    }
+  }
+}

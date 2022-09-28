@@ -1,0 +1,28 @@
+@media screen and (min-width: 768px) {
+  .dndflow {
+    flex-direction: row;
+  }
+}
+.dndflow {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  .reactflow-wrapper {
+    flex-grow: 1;
+    height: 100%;
+  }
+  .save__controls {
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 4;
+  }
+  .controls {
+    font-size: 12px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 10;
+  }
+}

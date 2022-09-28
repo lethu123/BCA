@@ -1,0 +1,36 @@
+#course-dt > header {
+  z-index: 0 !important;
+}
+
+.curriculum {
+  .lesson-content {
+    .section {
+      background: rgb(227, 234, 239);
+      &:hover {
+        .action-section {
+          display: block;
+        }
+      }
+      .action-section {
+        display: none;
+      }
+      .content-lesson {
+        .course-details__meta {
+          &:hover {
+            .action-lesson {
+              display: block;
+            }
+          }
+          .action-lesson {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+ul.react-autosuggest__suggestions-list {
+  list-style-type: none !important;
+  padding-inline-start: 0 !important;
+}
+

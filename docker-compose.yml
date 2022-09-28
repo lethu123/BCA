@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  frontend:
+    container_name: bcavietnam_com
+    build:
+        context: .
+    ports:
+        - 3000:80
+    volumes:
+        - .:/usr/src/bcavietnam.com
+        - /usr/src/bcavietnam.com/node_modules
+    environment:
+        - NODE_ENV=production

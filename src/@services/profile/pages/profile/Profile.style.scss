@@ -1,0 +1,53 @@
+@media screen and (min-width: 768px) {
+  .responsiveMenu {
+    button {
+      svg {
+        display: none;
+      }
+    }
+  }
+}
+#user-profile {
+  .profile-header {
+    .profile-img-container {
+      .profile-img {
+        height: 11.25rem;
+        width: 11.92rem;
+      }
+    }
+  }
+}
+.scoreProfile {
+  position: absolute;
+  right: 3%;
+  bottom: 0;
+}
+.dropdownStyle {
+  .dropdown-menu.show {
+    left: -60px !important;
+    top: -20px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #user-profile {
+    .profile-header {
+      .profile-img {
+        height: 8.25rem !important;
+        width: 8.25rem !important;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .cardImg {
+    height: 190px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .cardImg {
+    height: 150px;
+  }
+}

@@ -1,0 +1,73 @@
+/* custom input search */
+.mycustom_input_search,
+.myinputSearch {
+    background-color: #f4f5f4 !important;
+    border: none !important;
+}
+
+.mycustom_input_search:focus,
+.myinputSearch:focus {
+    border: none;
+}
+
+.event-sidebar {
+    @media (min-width: 767px) {
+        position: fixed;
+        width: 100%;
+        max-width: 290px;
+    }
+
+    .active {
+        .link {
+            background-color: #F0F2F5;
+
+            &-icon {
+                background-color: #F3743C;
+
+                i {
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .link {
+        transition: all .3s;
+
+        &-icon {
+            background-color: #dfdade;
+            width: 36px;
+            height: 36px;
+
+            i {
+                font-size: 20px;
+                color: black
+            }
+        }
+
+        &:hover {
+            background-color: #F0F2F5;
+        }
+
+        h5 {
+            color: #000000;
+        }
+    }
+
+    .btn-create {
+        background-color: #F3743C !important;
+        transition: all .3s;
+        border: none !important;
+    }
+
+    .btn-create:focus,
+    .btn-create:active {
+        background-color: #F3743C !important;
+    }
+
+}
+.form-select-custom{
+    &:hover{
+        background-color: #F0F2F5;
+    }
+}

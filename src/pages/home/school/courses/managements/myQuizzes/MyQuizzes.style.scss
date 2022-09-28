@@ -1,0 +1,28 @@
+.myQuizzes {
+  .editButtonMyQuizzes {
+    &:active {
+      background-color: none !important;
+    }
+  }
+  .progress {
+    margin-bottom: 0 !important;
+  }
+  .dropdown {
+    .btn-flat-primary {
+      &:focus,
+      &:hover {
+        background-color: white !important;
+      }
+    }
+  }
+  .dropdown-toggle {
+    svg {
+      color: #ff6700 !important;
+    }
+  }
+}
+.editQuestionMyQuizzes {
+  header {
+    padding-left: 0 !important;
+  }
+}

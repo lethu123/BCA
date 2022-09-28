@@ -1,0 +1,22 @@
+.list.list-hover .list-item.active {
+  .bg-hover-white {
+    transition: all 0.15s ease;
+    background-color: #ffffff !important;
+  }
+  .text-hover-primary {
+    transition: color 0.15s ease, background-color 0.15s ease,
+      border-color 0.15s ease, box-shadow 0.15s ease;
+    color: #1eac52 !important;
+  }
+}
+.chatContentPage{
+  ::-webkit-scrollbar {
+    width: 0px !important;
+  }
+}
+
+.memberChat{
+  ::-webkit-scrollbar {
+    width: 0px !important;
+  }
+}

@@ -1,0 +1,104 @@
+// =========================================================================================
+//   File Name: timeline.scss
+//   Description: Timeline style.
+//   ----------------------------------------------------------------------------------------
+//   Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
+//   Author: PIXINVENT
+//   Author URL: http://www.themeforest.net/user/pixinvent
+// ==========================================================================================
+
+// Component: Timeline
+// ========================================================================
+
+.timeline_tool {
+  padding: 0;
+  margin-bottom: 0;
+  margin-left: 1rem;
+  list-style: none;
+
+  // Timeline Item
+  .timeline-item_tool {
+    position: relative;
+    padding-left: 2.5rem;
+    border-left: 1px solid #ebe9f1;
+
+    &:not(:last-child) {
+      padding-bottom: 1.8rem;
+    }
+
+    // Timeline Point
+    .timeline-point_tool {
+      position: absolute;
+      left: -0.85rem;
+      top: 0;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 1.75rem;
+      width: 1.75rem;
+      text-align: center;
+      border-radius: 50%;
+      border: 1px solid #E6641F;
+      background-color: #fff;
+
+      // Timeline Point Indicator
+      &.timeline-point-indicator_tool {
+        left: -0.412rem;
+        top: 0.07rem;
+        height: 12px;
+        width: 12px;
+        border: 0;
+        background-color: #E6641F;
+
+        &:before {
+          content: '';
+          background: rgba(
+            $color: #E6641F,
+            $alpha: 0.12
+          );
+          height: 20px;
+          width: 20px;
+          display: block;
+          position: absolute;
+          top: -0.285rem;
+          left: -0.285rem;
+          border-radius: 50%;
+        }
+      }
+
+      // Icons
+      i,
+      svg {
+        color: #E6641F;
+        font-size: 0.85rem;
+        vertical-align: baseline;
+      }
+    }
+
+    .timeline-event_tool {
+      position: relative;
+      width: 100%;
+      min-height: 4rem;
+      // background-color: transparent;
+
+      .timeline-event-time_tool {
+        font-size:  0.85rem;
+        color: #b9b9c3;
+      }
+    }
+
+    &:last-of-type {
+      border-left-color: transparent !important;
+      &:after {
+        content: '';
+        position: absolute;
+        left: -1px;
+        bottom: 0;
+        width: 1px;
+        height: 100%;
+        background: linear-gradient(#ebe9f1, transparent);
+      }
+    }
+  }
+}

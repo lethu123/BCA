@@ -1,0 +1,18 @@
+.custom-wizard-email {
+  .bs-stepper {
+    box-shadow: none !important;
+    .bs-stepper-header {
+      padding: 1.5rem 0;
+    }
+
+    .bs-stepper-content {
+      padding: 1.5rem 0 0 0;
+    }
+  }
+}
+.form-group {
+  label {
+    // margin-bottom: 25px;
+    font-size: 16px;
+  }
+}

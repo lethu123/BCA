@@ -1,0 +1,12 @@
+$theme-dark-card-bg: #2E2C2C !default;
+.custom-nav-scroll-dark{
+  .shadow-bottom {
+    // background: linear-gradient(
+    //   180deg,
+    //   $theme-dark-card-bg 44%,
+    //   rgba($theme-dark-card-bg, 0.51) 73%,
+    //   rgba($theme-dark-card-bg, 0)
+    // );
+    background:unset;
+  }
+}

@@ -1,0 +1,100 @@
+
+
+  .select__value-container{
+    height: 50px;
+  }
+
+
+  #user-profile {
+  
+      .profile-img-container {
+        bottom: 4rem !important;
+        .profile-img {
+          height: 12.92rem !important;
+          width: 12.92rem !important;
+        }
+      
+    }
+  }
+  @media screen and(max-width: '768px') {
+    #user-profile {
+      .profile-header {
+        .revenueProfile{
+          .total-price{
+            font-size:12px !important;
+            height:45px !important
+          }
+        }
+        .profile-title{
+          h2 {
+            font-size: 17px !important;
+          }
+          .active-text{
+            font-size: 12px !important;
+          }
+        }
+        .profile-img-container {
+          bottom: 5rem !important;
+          
+         
+          .profile-img {
+            height: 5.92rem !important;
+            width: 5.92rem !important;
+          }
+        }
+        u{
+          font-size: 12px !important;
+        }
+        .text-follower{
+          font-size: 12px !important;
+        }
+        .followerMember{
+          max-width: 200px;
+        }
+      }
+      .scoreProfile {
+        p{
+          font-size:10px !important;
+        }
+        span{
+          font-size:11px !important;
+        }
+        position: absolute !important;
+        left: 3% !important;
+        bottom: 5% !important;
+      }
+      .banner-image-member{
+        height:350px !important
+      }
+    } 
+  }
+  .scoreProfile {
+    position: absolute;
+    left: 83%;
+    bottom: 5%;
+  }
+  .dropdownStyle {
+    .dropdown-menu.show {
+      left: -60px !important;
+      top: -20px !important;
+    }
+  }
+  .revenueProfile{
+    position: absolute;
+    right: 3%;
+    top: 8%;
+  }
+
+  .breadcrumbs-product {
+    background-color: transparent !important;
+    width: 100% !important;
+  }
+  .breadcrumb {
+    background-color: transparent;
+  }
+  .breadcrumb-item {
+    &::after {
+      display: none;
+    }
+  }
+  

@@ -1,0 +1,259 @@
+.card {
+  .card-header.headerGradientGreen {
+    background-image: linear-gradient(to right, #A6B79C, #CBCBCB);
+    padding: 10px 0 !important;
+
+    .nav.nav-tabs {
+      .nav-item.modalStartUpTool {
+        .nav-link.active {
+          background-color: #F0F7EC;
+          opacity: 0.3;
+          color: #808080;
+          transform: translateY(0);
+
+          &::after {
+            content: none;
+          }
+        }
+
+        .nav-link {
+          color: white;
+        }
+      }
+    }
+
+  }
+
+  .card-header.headerGradientYellow {
+    background-image: linear-gradient(to right, #EBB100, #FFCF40, #FFEAAC) !important;
+    padding: 10px 0 !important;
+
+    .nav.nav-tabs {
+      .nav-item.modalStartUpTool {
+        .nav-link.active {
+          background-color: #F0F7EC;
+          opacity: 0.3;
+          color: #808080;
+          transform: translateY(0);
+
+          &::after {
+            content: none;
+          }
+        }
+
+        .nav-link {
+          color: white;
+        }
+      }
+    }
+  }
+
+  .dropdown-toggle.dropdownMore {
+    background-color: transparent !important;
+
+    svg {
+      left: 0;
+    }
+  }
+
+  .dropdown {
+    .dropdown-menu {
+      .dropdownItem {
+        margin: 0;
+
+        &:hover {
+          background-color: transparent !important;
+          color: #ff6700 !important
+        }
+      }
+    }
+
+  }
+}
+
+.inputPlaceholder {
+  &::placeholder {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .iconModalHypothesis {
+    width: 85px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sectionUploadFile {
+    .uploadFile {
+      width: 50% !important;
+
+    }
+  }
+
+}
+
+.navInterelationHypotheses.nav.nav-tabs {
+  box-shadow: none;
+
+  .nav-item.navItemInterelationHypotheses {
+    .nav-link.active {
+      transform: translateY(0) !important;
+      color: #ff6700 !important;
+
+      &::after {
+        content: '' !important;
+        height: 0 !important;
+      }
+    }
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .NoteHeader {
+    height: 100vh;
+  }
+}
+
+.avatarMessage {
+  background-color: transparent !important;
+}
+
+.listIconMes {
+  .iconLike {
+    &:hover {
+      stroke: #FFC002;
+      transform: scale(1.2);
+    }
+  }
+
+  .iconHeart {
+    &:hover {
+      stroke: #ea5455;
+      transform: scale(1.2);
+    }
+  }
+
+  .iconDisLike {
+    &:hover {
+      stroke: #6EB144;
+      transform: scale(1.2);
+    }
+  }
+
+  .dropdown-menu.show {
+    top: 40% !important;
+    min-width: 100px;
+    margin-bottom: 0;
+  }
+}
+
+.switchIdeation {
+  .custom-control-input:checked~.custom-control-label::before {
+    background-color: #6eb144 !important;
+  }
+}
+
+.formDateTime.form-control.flatpickr-input~input {
+  width: auto !important;
+  color: #6EB144;
+  border: 1px solid #6EB144;
+  border-radius: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.flatpickr-calendar {
+  .flatpickr-days {
+    .dayContainer {
+      .flatpickr-day.selected {
+        background: #6EB144 !important;
+        border-color: #6EB144 !important;
+      }
+    }
+  }
+
+  .flatpickr-weekdays {
+    background: #6EB144 !important;
+  }
+
+  .flatpickr-weekday {
+    background: #6EB144 !important;
+  }
+
+  .flatpickr-months {
+    .flatpickr-month {
+      background: #6EB144 !important;
+    }
+  }
+
+}
+
+.flatpickr-calendar.arrowTop:before {
+  border-bottom-color: #6EB144 !important;
+}
+
+.flatpickr-calendar.arrowTop::after {
+  border-bottom-color: #6EB144 !important;
+}
+
+.selectFormModals {
+  width: 230px !important;
+
+}
+
+.ideationModal {
+  .rdt_TableHeader {
+    display: none;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0px !important;
+}
+
+
+
+.planningTab {
+  .nav.nav-tabs .nav-item .nav-link.active:after {
+    height: 0px !important;
+  }
+
+  .nav.nav-tabs .nav-item .nav-link.active {
+    transform: translateY(0px);
+  }
+
+
+}
+
+.modalEditDetailCanvasForm {
+  .wizard-actions {
+    display: none !important;
+  }
+
+  .nav.nav-tabs .nav-item .nav-link.active {
+    background-color: transparent !important;
+  }
+}
+
+.progressCus {
+  .progress {
+    height: 10px !important;
+  }
+
+  .card-action {
+    margin-top: 0px !important;
+  }
+}
+
+.modalTab4 {
+  .nav.nav-tabs .nav-item .nav-link.active:after {
+    height: 2px !important;
+  }
+}
+.beadcrumbStartupTool{
+  ol{
+    align-items: center;
+  }
+}

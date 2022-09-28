@@ -1,0 +1,23 @@
+.formLikeAutomation {
+  .custom-checkbox .custom-control-label::before,
+  .custom-checkbox .custom-control-label::after,
+  .custom-radio .custom-control-label::before,
+  .custom-radio .custom-control-label::after {
+    width: 22px;
+    height: 22px;
+  }
+
+  input[type='radio'] {
+    /* Double-sized Checkboxes */
+    -ms-transform: scale(1.5) !important; /* IE */
+    -moz-transform: scale(1.5) !important; /* FF */
+    -webkit-transform: scale(1.5) !important; /* Safari and Chrome */
+    -o-transform: scale(1.5) !important; /* Opera */
+    padding: 10px !important;
+    color: red;
+  }
+
+  label {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,81 @@
+
+
+.commentName{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #000000;
+    line-break: 20.08px;
+}
+.commentSubname{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #999999;
+    line-height: 12.55px;
+}
+.commentHours{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #999999;
+    padding-left: 12px;
+    margin-left: 4px;
+    
+}
+.commentHours::before{
+   
+}
+.commentDesc p{
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 20.08px;
+    color: #000000;
+}
+.commentDesc_hasTag{
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 20.08px;
+    color: #000000;
+    display: inline;
+}
+.commentAction p{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    line-height: 12.55px;
+    color: #999999;
+    margin-right: 43px;
+    cursor: pointer;
+}
+
+.addcomment_inpGroup{
+    width: calc(100% - 175px);
+    margin-right: 10px;
+    position: relative;
+}
+.addcomment_inp{
+    width: 100%;
+    padding: 12px 80px 12px 20px;
+    border: none !important;
+    height: 48px;
+}
+.addcomment_btn{
+    padding: 0 0;
+    width: 115px;
+    height: 48px;
+    margin: 0 0;
+    background-color: #E4E4E6 !important;
+    border: none !important;
+    color: #999999 !important;
+    background-image: none !important;
+}
+.addcomment_emoji{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+}
+.addcomment_images{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 50px;
+}

@@ -1,0 +1,10 @@
+.action-comment {
+  .popup-action-cmt {
+    display: none;
+  }
+  &:hover {
+    .popup-action-cmt {
+      display: block;
+    }
+  }
+}

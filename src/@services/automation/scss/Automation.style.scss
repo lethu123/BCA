@@ -1,0 +1,19 @@
+.automation-page {
+  .breadcrumbs-product {
+    background-color: transparent !important;
+    width: 100% !important;
+  }
+  .breadcrumb {
+    background-color: transparent;
+  }
+  .breadcrumb-item {
+    &::after {
+      display: none;
+    }
+  }
+}
+.create-input-data {
+  .bs-stepper {
+    box-shadow: none;
+  }
+}

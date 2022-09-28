@@ -1,0 +1,19 @@
+.manageGroup {
+  .custom-control-label {
+    padding-left: 0;
+  }
+}
+.modalUploadImg {
+  .modal-body {
+    div {
+      height: 130px;
+    }
+  }
+
+  .uppy-Root {
+    height: 120px !important;
+  }
+  .uppy-DragDrop-inner {
+    padding: 0px !important;
+  }
+}

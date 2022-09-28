@@ -1,0 +1,19 @@
+.breadcrumbs-product {
+  background-color: transparent !important;
+  width: 100% !important;
+}
+.breadcrumb {
+  background-color: transparent;
+}
+.breadcrumb-item {
+  &::after {
+    display: none;
+  }
+}
+
+.mining-item {
+  .card-header {
+    min-height: auto;
+    padding: 0 2.25rem !important;
+  }
+}

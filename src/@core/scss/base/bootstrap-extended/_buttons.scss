@@ -1,0 +1,113 @@
+// var for box shadow of gradient buttons
+// Buttons
+.btn {
+  box-shadow: none;
+  font-weight: 500;
+
+  // gradient button on hover transition
+  &[class*='bg-gradient-'] {
+    transition: all 0.2s ease;
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+
+  // Icon button padding
+  &.btn-icon {
+    padding: 0.715rem 0.736rem;
+  }
+  &.btn-sm {
+    &.btn-icon {
+      padding: 0.5rem;
+      line-height: 0.5;
+    }
+  }
+  &.btn-lg {
+    &.btn-icon {
+      padding: 1rem;
+      line-height: 0.75;
+    }
+  }
+
+  &:focus,
+  &.focus,
+  &:active,
+  &.active {
+    outline: none;
+    box-shadow: none;
+  }
+
+  &:not(:disabled):not(.disabled):active:focus,
+  &:not(:disabled):not(.disabled).active:focus {
+    box-shadow: none !important;
+  }
+
+  // feather icons inside btn
+  .feather {
+    vertical-align: bottom;
+  }
+}
+
+// For Waves Input Padding
+.btn.waves-input-wrapper {
+  padding: 0;
+}
+
+@include media-breakpoint-down(sm) {
+  .btn-sm-block {
+    display: block;
+    width: 100%;
+  }
+}
+
+// Remove cursor-pointer from button if button is disabled
+// * setting it to inherit will auto adept cursor
+.waves-effect {
+  cursor: inherit;
+}
+
+.custom-hover-shinny {
+  overflow: hidden;
+  position: relative;
+  &:hover {
+    &::before {
+      animation: shiny-btn 10s ease-in-out infinite;
+      background-color: #ffffff;
+      content: '';
+      display: inline-block;
+      height: 100%;
+      left: 0;
+      pointer-events: none;
+      position: absolute;
+      top: -180px;
+      width: 30px;
+    }
+  }
+}
+
+@keyframes shiny-btn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0) rotate(45deg);
+  }
+
+  1% {
+    opacity: 0.5;
+    -webkit-transform: scale(2) rotate(45deg);
+  }
+
+  2% {
+    opacity: 1;
+    -webkit-transform: scale(5) rotate(45deg);
+  }
+
+  10% {
+    opacity: 0;
+    -webkit-transform: scale(50) rotate(45deg);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(50) rotate(45deg);
+  }
+}

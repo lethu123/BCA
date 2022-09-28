@@ -1,0 +1,24 @@
+  .img-create-project {
+    .uppy-Root
+    {
+      height: 120px !important;
+    }
+    .uppy-DragDrop-inner{
+      padding: 0px !important;
+    }
+  }   
+  
+  .breadcrumbs-product{
+    background-color: transparent !important;
+    width: 100% !important;
+  }
+  .breadcrumb{
+    background-color: transparent ;
+
+  }
+  .breadcrumb-item{
+    &::after{
+      display: none;
+    }
+  
+  }

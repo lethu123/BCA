@@ -1,0 +1,31 @@
+.memberDetail {
+  button.more-vertical-btn {
+    background: transparent !important;
+    color: black !important;
+    border: none;
+    &:focus {
+      background: #eee !important;
+    }
+    &:hover {
+      box-shadow: none !important;
+    }
+  }
+  button {
+    width: 100% !important;
+  }
+  .dropdown-item.dropdown-toggle {
+    &::before {
+      display: none !important;
+    }
+  }
+  .dropdown-item,
+  .dropdown-item.dropdown-toggle,
+  .dropright.dropdown {
+    &:focus {
+      svg,
+      span {
+        color: white !important;
+      }
+    }
+  }
+}

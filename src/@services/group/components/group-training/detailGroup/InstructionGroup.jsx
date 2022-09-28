@@ -1,0 +1,99 @@
+import {Archive, Grid, MapPin} from 'react-feather'
+import {Card, CardBody} from 'reactstrap'
+// import imgFB from 'assets/images/user/fb.png'
+// import imgIN from 'assets/images/user/in.png'
+// import imgINS from 'assets/images/user/ins.png'
+// import imgSKY from 'assets/images/user/sky.png'
+// import imgTW from 'assets/images/user/tw.png'
+// import imgYTB from 'assets/images/user/ytb.png'
+
+const InstructionGroup = ({infoGroup}) => {
+  if (!infoGroup) return null
+  return (
+    <Card className="h-100">
+      <CardBody>
+        <h6 className="mb-2">Giới thiệu</h6>
+        <p className="text-primary text-center" style={{fontSize: 20}}>
+          {infoGroup.group_name}
+        </p>
+        <div>
+          <h6 className="mb-75">Mô tả nhóm</h6>
+          <p style={{fontStyle: 'italic'}}>"{infoGroup.group_description}"</p>
+        </div>
+        <div>
+          <div>
+            <div className="d-flex">
+              <Grid size={17} className="text-primary mr-2" />
+              <p>
+                <span className="font-weight-bolder">ID nhóm : </span>{' '}
+                {infoGroup._id}
+              </p>
+            </div>
+            <div className="d-flex">
+              <Archive size={17} className="text-primary mr-2" />
+              <p>
+                <span className="font-weight-bolder">Số thành viên : </span>{' '}
+                {infoGroup.members?.length}
+              </p>
+            </div>
+            <div className="d-flex">
+              <MapPin
+                size={17}
+                style={{color: '#1B75BB', marginTop: 3, marginRight: 5}}
+              />
+              <p>{`${infoGroup.group_address?.group_city}, ${infoGroup.group_address?.group_district}, ${infoGroup.group_address?.group_commune}`}</p>
+            </div>
+            {/* <div className="d-flex">
+              <Mail
+                size={17}
+                style={{color: '#1B75BB', marginTop: 3, marginRight: 5}}
+              />
+              <p>nlghuy@hspace.biz</p>
+            </div>
+            <div className="d-flex">
+              <Calendar
+                size={17}
+                style={{color: '#1B75BB', marginTop: 3, marginRight: 5}}
+              />
+              <p>
+                <span className="font-weight-bolder">Ngày tham gia: </span>
+                02/08/2021
+              </p>
+            </div> */}
+          </div>
+        </div>
+        {/* <div>
+          <h6 className="mb-75">Mạng xã hội</h6>
+          <div className="d-flex ">
+            <img src={imgFB} alt="images" width="25px" height="25px" />
+            <img
+              src={imgIN}
+              className="mx-3"
+              alt="images"
+              width="25px"
+              height="25px"
+            />
+            <img src={imgTW} alt="images" width="25px" height="25px" />
+            <img
+              src={imgYTB}
+              className="mx-3"
+              alt="images"
+              width="25px"
+              height="25px"
+            />
+            <img src={imgSKY} alt="images" width="25px" height="25px" />
+            <img
+              src={imgINS}
+              className="mx-3"
+              alt="images"
+              width="25px"
+              height="25px"
+            />
+          </div>
+        </div> */}
+      </CardBody>
+    </Card>
+  )
+}
+
+export default InstructionGroup

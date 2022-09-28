@@ -1,0 +1,19 @@
+.userNav {
+  .navi-link {
+    padding: 0;
+  }
+  .nav-link.active {
+    &::after {
+      display: none;
+    }
+  }
+  .navi.navi-hover {
+    .navi-item {
+      .navi-link {
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}

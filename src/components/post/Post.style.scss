@@ -1,0 +1,12 @@
+.postStyle {
+  .dropdown-item {
+    margin-right: 0;
+    &:active {
+      background-color: transparent;
+      color: #1B75BB;
+    }
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}

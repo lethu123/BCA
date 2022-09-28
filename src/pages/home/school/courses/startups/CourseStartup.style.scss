@@ -1,0 +1,77 @@
+.swiper-image {
+    .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 4px !important;
+    }
+}
+
+// .button-
+.percen {
+    position: absolute;
+    top: 0;
+    // left: -20px;
+}
+.total-lesson {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.view-continue {
+    position: relative;
+    .target {
+        position: absolute;
+        top: 0;
+    }
+    .title {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+.img-container {
+    .target {
+        position: absolute;
+        top: 0;
+        z-index: 1;
+    }
+}
+.tobe-continue {
+    .play-continue {
+        position: absolute;
+        top: 44px;
+        right: 0;
+        padding: 25px;
+    }
+    .overlay {
+        background: rgba(0, 0, 0, 0.6);
+    }
+}
+
+// ======= custom lesson startup ===============
+.content-startup {
+    .navigation-startup {
+        .title {
+            h3 {
+                padding-bottom: 5px;
+                border-bottom: 3px solid #f16101;
+            }
+        }
+    }
+}
+.sticky-menu {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px;
+}
+
+.file-attack {
+    box-shadow: none !important;
+    > .card,
+    .card.open {
+        box-shadow: none !important;
+        .card-header {
+            padding: 0 1rem 0 0;
+        }
+    }
+}

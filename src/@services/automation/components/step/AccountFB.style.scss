@@ -1,0 +1,20 @@
+.dataTable-custom {
+  header {
+    display: none;
+  }
+}
+.dataTable {
+  .form-group {
+    margin-bottom: 5px;
+  }
+}
+
+.filter-customer-leads {
+  .card {
+    box-shadow: none !important;
+    border: none;
+    .card-body {
+      padding: 0;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.workshop-item-2__meta {
+  width: calc(100% - 85px);
+  font-size: 1rem;
+  line-height: 1.85;
+  letter-spacing: 0.01em;
+  color: #383838;
+  list-style: none;
+  padding: 0 0 0 25px;
+  margin: 0;
+  li {
+    position: relative;
+    line-height: 1.45;
+    margin-bottom: 5px;
+    i,
+    svg {
+      position: absolute;
+      left: -25px;
+      top: 5px;
+      text-align: center;
+      width: 12px;
+      font-size: 14px;
+    }
+  }
+}

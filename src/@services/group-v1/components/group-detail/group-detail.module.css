@@ -1,0 +1,38 @@
+.profileHeader {
+    position: absolute;
+    padding: 23px 32px;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    z-index: 50;
+}
+
+span.dot {
+    position: relative;
+}
+
+span.dot ~ span.dot::before {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    content: "";
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -7px;
+    background-color: #C4C4C4;
+}
+
+.input,
+.inputSearch {
+    background-color: #f4f5f4 !important;
+    border: none !important;
+}
+
+.input:focus,
+.inputSearch:focus {
+    border: none;
+}

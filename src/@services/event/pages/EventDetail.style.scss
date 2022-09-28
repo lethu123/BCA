@@ -1,0 +1,45 @@
+.mineGroup {
+  position: absolute;
+  bottom: -11px;
+  left: 0;
+  background: #E6641F;
+  padding: 10px 5px;
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 13px;
+}
+.modal-title {
+  width: 100%;
+}
+.modalUploadAvatar {
+  .modal-body {
+    div {
+      height: 110px;
+    }
+  }
+
+  .uppy-Root {
+    height: 120px !important;
+  }
+  .uppy-DragDrop-inner {
+    padding: 0px !important;
+  }
+}
+
+.eventDetail {
+  .btn.btn-secondary {
+    background-color: transparent !important;
+    color: black !important;
+    border: none;
+    &:hover {
+      box-shadow: none !important;
+      background-color: transparent !important;
+    }
+  }
+  .dropdown-item {
+    width: 100%;
+    &:hover {
+      background-color: #E6641F;
+      color: white;
+    }
+  }
+}

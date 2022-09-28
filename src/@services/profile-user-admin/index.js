@@ -1,0 +1,7 @@
+export {default as PersionalInfocation} from './components/persional-infocation/PersionalInfocation'
+export {default as ProfileCustomer} from './components/profile-customer/ProfileCustomer'
+export {default as StatisticProfileUser} from './components/statistic/StatisticProfileUser'
+export {default as TableProfileUser} from './components/table/TableProfileUser'
+export {default as ModalTransferData} from './components/modal/ModalTransferData'
+export {default as ModalConditionHealth} from './components/modal/ModalConditionHealth'
+export {default as ModalInsurance} from './components/modal/ModalInsurance'

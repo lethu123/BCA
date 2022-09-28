@@ -1,0 +1,221 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+$timing: 265ms;
+$iconColor: #00b5f5;
+$accent: #002a8f;
+$bluefade: #0043e0;
+$gradient: #00b5f5;
+
+@mixin transformScale($size: 1) {
+  transform: scale($size);
+  -ms-transform: scale($size);
+  -webkit-transform: scale($size);
+}
+
+.social-icons {
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: inline-block;
+    margin: 0.15em;
+    position: relative;
+    font-size: 1.2em;
+  }
+
+  i {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all $timing ease-out;
+  }
+
+  a {
+    display: inline-block;
+    position: relative;
+
+    &:before {
+      @include transformScale();
+      content: ' ';
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      line-height: 40px;
+      display: block;
+      background: linear-gradient(45deg, $iconColor, $accent);
+      transition: all $timing ease-out;
+    }
+
+    &:hover:before {
+      transform: scale(0);
+      transition: all $timing ease-in;
+    }
+
+    &:hover i {
+      @include transformScale(1.7);
+      color: $iconColor;
+      background: -webkit-linear-gradient(45deg, $iconColor, $accent);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: all $timing ease-in;
+
+      top: 22%;
+      left: 37%;
+    }
+  }
+}
+.card-content {
+  box-shadow: black 0px 0px 30px 0px !important;
+}
+.box {
+  background-color: transparent;
+  border-radius: 3px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 300px;
+  transform-style: preserve-3d;
+  perspective: 2000px;
+  transition: 0.4s;
+  text-align: center;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border-top: 20px solid #fff;
+    border-left: 20px solid #fff;
+    box-sizing: border-box;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 20px solid #fff;
+    border-right: 20px solid #fff;
+    box-sizing: border-box;
+  }
+  .fas {
+    font-size: 25px;
+    height: 50px;
+    width: 50px;
+    line-height: 50px !important;
+    background-color: #fff;
+    color: #2c3a47;
+  }
+  .fa2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+  }
+  .text {
+    position: absolute;
+    top: 30px;
+    left: -30px;
+    width: calc(100% + 60px);
+    height: calc(100% - 60px);
+    background-color: #2c3a47;
+    border-radius: 3px;
+    transition: 0.4s;
+    .fa1 {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    div {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      text-align: center;
+      width: 100%;
+      padding: 30px 60px;
+      line-height: 1.5;
+      box-sizing: border-box;
+      h3 {
+        font-size: 30px;
+        margin-bottom: 5px;
+      }
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+  &:hover {
+    .text {
+      transform: rotateY(20deg) skewY(-3deg);
+    }
+    transform: translate(-50%, -50%) rotateY(-20deg) skewY(3deg);
+  }
+}
+
+.qoutes {
+  .content_quotes {
+    z-index: 1;
+    background-color: white;
+    &::after {
+      content: '';
+      position: absolute;
+      top: -5%;
+      left: -4%;
+      width: 50%;
+      height: 50%;
+      background: #ffe2e5;
+      border-radius: 5px;
+      z-index: -1;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -5%;
+      right: -4%;
+      width: 50%;
+      height: 50%;
+      background: rgb(107, 192, 107);
+      border-radius: 5px;
+      z-index: -1;
+    }
+  }
+}
+
+.quote {
+  font-family: Georgia, serif;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.curly-quotes:before,
+.curly-quotes:after {
+  display: inline-block;
+  vertical-align: top;
+  height: 30px;
+  line-height: 30px;
+  font-size: 50px;
+  opacity: 0.2;
+}
+
+.curly-quotes:before {
+  content: '\201C';
+  margin-right: 4px;
+  margin-left: -8px;
+}
+
+.curly-quotes:after {
+  content: '\201D';
+  margin-left: 4px;
+  margin-right: -8px;
+}
+
+

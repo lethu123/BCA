@@ -1,0 +1,19 @@
+.activeProduct {
+  color: #1eac52;
+  background-color: #e4f5ea;
+  font-weight: bold;
+}
+.selectTeamBuildings {
+  .select__multi-value__remove {
+    svg {
+      width: 20px;
+      color: #1eac52;
+      height: 25px;
+    }
+  }
+}
+.addProductStep {
+  .tox.tox-tinymce {
+    height: 300px !important;
+  }
+}

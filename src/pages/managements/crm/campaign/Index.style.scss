@@ -1,0 +1,14 @@
+.indexCampaign {
+  .nav-link.active {
+    background-color: transparent;
+  }
+  .breadcrumb-item {
+    &::after {
+      display: none;
+    }
+  }
+  .breadcrumb {
+    background-color: transparent;
+    margin-bottom: 0;
+  }
+}

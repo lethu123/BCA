@@ -1,0 +1,30 @@
+// popup chat
+
+.popup-chat {
+  width: 320px;
+  max-width: calc(100% - 20px);
+  overflow: hidden;
+  position: relative;
+  z-index: 5;
+}
+
+.popup-chat-responsive {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  transform: translateX(100%);
+  opacity: 1;
+  visibility: visible;
+  display: block;
+  transition: all 0.3s ease;
+  margin-bottom: 0;
+  z-index: 999;
+  max-height: 70vh;
+  min-width: 400px;
+}
+
+.popup-chat-responsive.open-chat {
+  top: auto;
+  bottom: 0;
+  transform: translateX(0);
+}
